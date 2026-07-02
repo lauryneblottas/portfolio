@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+:root {
+    --light-color: #fcf6f1;
+    --dark-color: black;
+    --accent-color: #7d0e31;
+    --secondary-color: #c7a98b;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    margin: 0px;
+}
+
+.horizontal-section-full{
+    display: flex;
+    justify-content: center;
+}
+.horizontal-section-content{
+    width: min(1200px, 80vw);
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.horizontal-section-title-right, .horizontal-section-title-left {
+    text-transform: uppercase;
+    font-weight:400;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+.horizontal-section-title-right {
+    text-align: right;
+}
+.horizontal-section-title-right::after, .horizontal-section-title-left::after {
+    content: "";
+    display: block;
+    width: 60px;      /* Longueur de la ligne */
+    height: 1px;      /* Épaisseur */
+    background-color: currentColor;
+    margin-top: 10px; /* Espace entre le texte et la ligne */
+}
+.horizontal-section-title-right::after {
+    margin-left: auto;
+}
+
+
+/* header */
+.full-header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 28px 16px rgba(0,0,0,0.1);
+}
+.header{
+    display: flex;
+    justify-content: end;
+    width: min(1200px, 80vw);
+    align-items: center;
+}
+.header-first-name, .header-last-name {
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 0.15em;
+    margin: 5px;
+}
+.header-last-name {
+    margin-right: auto;
+    color: var(--accent-color);
+}
+.header-logo {
+    width: 80px;
+    height: auto;
+    fill: var(--accent-color);
+}
+.header-menu-button {
+    background:none;
+    border:none;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight:500;
+}
+.header-menu-button:hover {
+    color: var(--accent-color);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header-contact-button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: var(--accent-color);
+    color: var(--light-color);
+    border: 2px solid var(--accent-color);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 12px;
+    margin-left: 25px;
+}
+.header-contact-button:hover {
+    background: var(--light-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
+/* title */
+.main-title {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+    gap: 0px;
+    --title-size: clamp(2rem, 8vw, 5rem);
+}
+.main-title1{
+    font-size: var(--title-size);
+    line-height: 0.9;
+    letter-spacing:0.1em;
+    
+}
+.main-title2{
+    font-size: calc(var(--title-size) * 0.60);
+    letter-spacing:0.1em;
+}
+.main-title3{
+    color: var(--accent-color);
+    font-size: calc(var(--title-size) * 0.4);
+    font-weight: 400;
+    letter-spacing:0.25em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.main-title-header {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: clamp(2rem, 13cqw, 12rem);
+    width: 100%;
+    margin: 0px 0px;
+}
+.main-title-manifest {
+    display: flex;
+    flex-direction: column;
+    --manifest-size: clamp(0.7rem, 2.5vw, 1.5rem);
+}
+.main-title-manifest-tagline {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(var(--manifest-size) * 1);
+}
+.main-title-manifest-hero {
+    font-size: calc(var(--manifest-size) * 0.7);
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .header-menu-button {
+    display: none;
+  }
+  .main-title-first-name, .main-title-last-name {
+    text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .horizontal-section-title-right, .horizontal-section-title-left {
+        text-align: center;
+    }
+    .horizontal-section-title-right::after, .horizontal-section-title-left::after {
+        margin: auto;
+        margin-top: 10px;
+    }
+}

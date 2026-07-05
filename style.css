@@ -154,6 +154,35 @@ body {
 }
 
 
+/* key notes */
+.key-notes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.key-note {
+    color: var(--secondary-color);
+    font-size: clamp(0.5rem, 1.8cqw, 0.8rem);
+    width: 120px;
+    margin: 0px 40px;
+    text-align: center;
+}
+
+
+.quality-box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+.quality-box {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.6rem, 1.5cqw, 1rem);
+}
 
 
 @media (max-width: 1200px) {

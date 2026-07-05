@@ -73,6 +73,7 @@ body {
     fill: var(--accent-color);
 }
 .header-menu-button {
+    align-self: stretch;
     background:none;
     border:none;
     text-transform: uppercase;

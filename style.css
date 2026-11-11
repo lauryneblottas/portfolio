@@ -173,7 +173,7 @@ p + p { margin-top: 12px; }
 .burgundy { background: var(--accent-color); color: var(--light-color); }
 
 .facts { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; text-align: center; }
-.facts dt { margin-bottom: 4px; color: var(--secondary-color); font-family: Georgia, serif; font-size: 29px; font-style: italic; line-height: 1.1; }
+.facts dt { margin-bottom: 4px; color: var(--secondary-color); font: 400 38px/0.9 "Monsieur La Doulaise", cursive; }
 .facts dd { color: #e7d5c6; font-size: 12px; }
 .facts dt.fact-icons { min-height: 34px; color: var(--secondary-color); font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; line-height: 1; }
 .facts .fact-icons svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; vertical-align: middle; }

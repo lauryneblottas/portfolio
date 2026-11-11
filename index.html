@@ -1,105 +1,218 @@
+<!doctype html>
+<html lang="fr">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de Lauryne Blottas, marketing et communication dans le parfum, la beauté et le luxe.">
+    <title>Lauryne Blottas — Portfolio Parfum & Beauté</title>
     <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
 </head>
+<body id="accueil">
+    <header class="full-header">
+        <div class="header wrap">
+            <a class="brand" href="#accueil">
+                <img src="logo.svg" alt="" width="38" height="38">
+                <span>Lauryne <span class="brand-last-name">Blottas</span></span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <a href="#expertises">Expertises</a>
+                <a href="#experiences">Expériences</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#formations">Formations</a>
+                <a class="button" href="#contact">Me contacter</a>
+                <span class="language" title="Version anglaise à venir">FR / EN</span>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" aria-labelledby="portfolio">
+            <div class="wrap hero-content">
+                <p class="main-title">
+                    <strong>Marketing</strong>
+                    <span>&amp; Communication</span>
+                    <small>Parfum Beauté Luxe</small>
+                </p>
+                <div class="actions">
+                    <a class="button cv-button" aria-disabled="true" title="CV à ajouter">
+                        CV
+                        <svg aria-hidden="true" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v17m-5-5 5 5 5-5M2 19v3a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4v-3"/>
+                        </svg>
+                    </a>
+                    <a class="button outline" href="#contact">Échangeons</a>
+                </div>
+                <p class="manifest">Concevoir le produit.<br>Donner vie à son univers.</p>
+                <p class="manifest-detail">Transformer chaque concept produit en univers cohérent, mémorable et désirable.</p>
+                <p class="availability">Disponible dès maintenant<br>CDI · CDD · VIE · Graduate Program</p>
+                <p class="hero-axis"><span>Produit</span><span>Image</span><span>Émotion</span></p>
+                <div class="hero-heading">
+                    <h1 id="portfolio">Portfolio</h1>
+                    <p class="hero-signature">Parfum &amp; Beauté</p>
+                </div>
+            </div>
+        </section>
 
-<body>
-    <div class="full-header">
-        <div class="header">
-            <img class="header-logo" src="logo.svg" alt="Logo">
-            <span class="header-first-name">Lauryne</span>
-            <span class="header-last-name">Blottas</span>
-            <button class="header-menu-button">
-                Expériences
-            </button>
-            <button class="header-menu-button">
-                Formation
-            </button>
-            <button class="header-menu-button">
-                Projets
-            </button>
-            <button class="header-menu-button">
-                Fiches
-            </button>
-            <button class="header-contact-button">
-                Me contacter
-            </button>
+        <section class="band dark">
+            <div class="wrap">
+                <h2>Quelques repères</h2>
+                <dl class="facts">
+                    <div><dt>3+</dt><dd>ans cumulés d’expérience<br>en luxe &amp; marketing</dd></div>
+                    <div><dt class="fact-icons"><img class="globe-icon" src="assets/worldwide-gold.svg" alt=""><span class="visually-hidden">Pays</span></dt><dd>France · Qatar<br>Canada · Chine</dd></div>
+                    <div><dt class="fact-icons"><svg class="chat-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4C10.6 4 3 10.2 3 18s7.6 14 17 14c2 0 4-.3 5.8-.9L34 36l-1.7-8.3C36 25.2 37 21.8 37 18 37 10.2 29.4 4 20 4Z"/><circle cx="13" cy="18" r="1.5"/><circle cx="20" cy="18" r="1.5"/><circle cx="27" cy="18" r="1.5"/></svg><span class="visually-hidden">Langues</span></dt><dd>FR / EN / ES</dd></div>
+                    <div><dt>40+</dt><dd>pays visités</dd></div>
+                    <div>
+                        <dt class="fact-icons">
+                            <svg class="beauty-icon" viewBox="15 7 75 90" aria-hidden="true">
+                                <rect x="30" y="9" width="29.5" height="10.5" rx="2.5"/>
+                                <path d="M35.5 19.5v11.7m18-11.7v11.7M22 31.2h46a4 4 0 0 1 4 4.6l-8 55.5a4.2 4.2 0 0 1-4.2 3.8H29.7a4.2 4.2 0 0 1-4.2-3.8l-8-55.5a4 4 0 0 1 4.5-4.6Z"/>
+                                <rect x="33.5" y="43" width="22.5" height="33.5"/>
+                                <path class="lipstick" d="m66.5 92 4.4-22.4 11.8 2.3-4.5 22.5Zm4.7-24 3.5-17.6 10.9 2.1-3.5 17.7Zm6.3-18.6 1.8-9.3c.6-2.8 4.1-6.4 7.2-7.2 1.2 2.2.8 5.8.3 8.4l-1.9 9.5Z"/>
+                            </svg>
+                            <span class="visually-hidden">Parfum et beauté</span>
+                        </dt>
+                        <dd>parfum &amp; beauté</dd>
+                    </div>
+                    <div><dt>18+</dt><dd>ans de pratique de la danse</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="band story" id="profil">
+            <div class="wrap">
+                <h2 class="right">Mon histoire, de Grasse à Chanel</h2>
+                <p class="lead">Formée chez CHANEL, ancrée dans le produit, portée par l’image et la culture.</p>
+                <p>Tout commence à Grasse, les étés de mon enfance, le jus, les matières, les odeurs. Très tôt, une question s’installe. Qu’est-ce qui transforme un parfum en signature&nbsp;?</p>
+                <p>Chez Sephora, la réponse rencontre le terrain, le produit face au client, les tendances, le marché, les mots qui donnent envie.</p>
+                <p>Chez CHANEL, le fil se précise. L’image d’abord, en coordination internationale paid media, pour préserver la cohérence visuelle d’une Maison et mettre le produit en lumière. Puis le produit lui-même, au cœur du métier de chef de produit parfum.</p>
+                <p>Aujourd’hui, je développe les produits, l’image de marque et les activations 360° des Maisons de parfum et de beauté.</p>
+                <a class="button" href="#expertises">Découvrir →</a>
+            </div>
+        </section>
+
+        <section class="band" id="expertises">
+            <div class="wrap">
+                <h2>Mon sillage professionnel</h2>
+                <div class="skills">
+                    <img src="assets/portrait.webp" alt="Lauryne Blottas assise" width="407" height="612" loading="lazy">
+                    <article><span class="symbol" aria-hidden="true">◇</span><h3>Marketing produit</h3><p>Développement et lancement de produits, positionnement, identité et stratégie produit.</p></article>
+                    <article><span class="symbol" aria-hidden="true">◎</span><h3>Activation 360°</h3><p>Plans d’activation intégrés en média, digital, trade, merchandising, formation et retail.</p></article>
+                    <article><span class="symbol" aria-hidden="true">↗</span><h3>Analyse business</h3><p>Suivi des performances sell-in et sell-out, études ad hoc et recommandations stratégiques.</p></article>
+                    <article><span class="symbol" aria-hidden="true">✧</span><h3>Retail beauté</h3><p>Suivi des tendances, veille concurrentielle et expérience client.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="band burgundy" id="experiences">
+            <div class="wrap">
+                <h2 class="right">Mon concentré d’expérience</h2>
+                <div class="experience-layout">
+                    <img src="logo.svg" alt="" width="180" height="180" loading="lazy">
+                    <div class="experience-list">
+                        <details><summary><span>01</span> CHANEL — Assistante Chef de Produit Parfum</summary><p>Marketing développement, au cœur du métier de chef de produit parfum.</p></details>
+                        <details><summary><span>02</span> CHANEL — Assistante Chef de Projet Média International</summary><p>Coordination internationale paid media et cohérence de l’image de marque.</p></details>
+                        <details><summary><span>03</span> SEPHORA — Conseillère en vente</summary><p>Conseil client, découverte des tendances et expérience retail beauté.</p></details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band">
+            <div class="wrap">
+                <h2>Mon accord signature</h2>
+                <div class="cards four">
+                    <article><h3>Adaptabilité internationale</h3><p>Une culture luxe, parfum et beauté pour comprendre les codes et les publics.</p></article>
+                    <article><h3>Force de proposition</h3><p>Une approche stratégique et créative pour imaginer des projets désirables.</p></article>
+                    <article><h3>Esprit analytique</h3><p>Allier analyse, créativité et sens esthétique pour bâtir des stratégies cohérentes.</p></article>
+                    <article><h3>Sens du relationnel</h3><p>Une énergie fédératrice pour faire émerger le meilleur collectivement.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <aside class="quote-band">« Je comprends le business, je comprends le produit, je comprends l’image, et je comprends le client. »</aside>
+
+        <section class="band lab" id="realisations">
+            <div class="wrap">
+                <h2 class="right">Mon laboratoire</h2>
+                <div class="cards three">
+                    <article><h3>Consulting</h3><p>Marketing et stratégie dans l’univers du luxe.</p></article>
+                    <article><h3>Mémoire académique</h3><p>Recherche et réflexion sur les enjeux des marques.</p></article>
+                    <article><h3>Parfum &amp; culture</h3><p>Nez, maisons, livres, films, conférences et expositions.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="band dark" id="formations">
+            <div class="wrap">
+                <h2>Mes matières premières académiques</h2>
+                <p class="script study-title">4 ans d’expérience à l’étranger</p>
+                <p class="countries">France <span></span> Canada <span></span> Qatar <span></span> Chine</p>
+                <div class="cards three">
+                    <article><h3>Diplômes</h3><ul><li>Master of Sciences EU-ASIA Luxury Marketing — ESSCA × EFAP</li><li>MBA Luxury Communication &amp; Strategy — EFAP</li><li>Master in Management, spécialisation Marketing — ESSCA</li><li>Baccalauréat scientifique, spécialisation informatique</li></ul></article>
+                    <article><h3>Certifications</h3><ul><li>MOOC Creative Box</li><li>Inside LVMH</li><li>Summer Program Luxury Fashion Branding &amp; Consumer Experience</li><li>L’Oréal Brandstorm 2026</li></ul></article>
+                    <article><h3>Associations</h3><ul><li>ESSCA Éloquence</li><li>YPB &amp; Club Luxe ESSCA</li><li>BNEM</li><li>ESSCA Luxury Society</li></ul></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="band match">
+            <div class="wrap">
+                <h2 class="right">La formule qui matche</h2>
+                <div class="match-layout">
+                    <div>
+                        <h3>À la recherche d’un profil pour…</h3>
+                        <div class="roles">
+                            <details><summary>Développer un produit iconique</summary><p>Chef de produit développement</p></details>
+                            <details><summary>Activer la marque sur le marché</summary><p>Chef de produit opérationnel, trade marketing manager, merchandising manager</p></details>
+                            <details><summary>Construire une image désirable</summary><p>Chef de projet publicité, chef de projet image, brand content manager</p></details>
+                            <details><summary>Coordonner des projets internationaux</summary><p>Coordinateur de projet, de lancement ou de campagne</p></details>
+                        </div>
+                        <p class="script">Créer des univers parfums &amp; beauté signature</p>
+                    </div>
+                    <img src="assets/diplome.webp" alt="Lauryne Blottas lors de sa remise de diplôme" width="433" height="577" loading="lazy">
+                </div>
+                <div class="recommendations">
+                    <img src="assets/chanel.webp" alt="Lauryne Blottas chez CHANEL" width="800" height="600" loading="lazy">
+                    <div>
+                        <h3>Recommandations professionnelles</h3>
+                        <figure><blockquote>« Je garderai en mémoire ta créativité sans limite&nbsp;! »</blockquote><figcaption>Charlotte Esteve · Responsable Parfums CHANEL France</figcaption></figure>
+                        <figure><blockquote>« Je n’ai jamais eu une telle stagiaire, elle est très investie, très curieuse et ne se contente pas de poser des questions intéressantes mais s’informe par différents moyens. Elle progresse très vite, une personne avec un avenir très prometteur. »</blockquote><figcaption>Nathalie Missiam · Directrice SEPHORA Commerce</figcaption></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band contact" id="contact">
+            <div class="wrap">
+                <h2 class="script">Contact</h2>
+                <div class="contact-content">
+                    <h3>Parlons de vos ambitions</h3>
+                    <p>Je suis disponible dès maintenant pour un VIE, Graduate Program, CDI ou CDD en marketing produit parfum &amp; beauté.</p>
+                    <p>Retrouvez-moi sur les pop-ups des derniers lancements parfum ou à la prochaine Perfume Week… mais pour être sûrs de ne pas nous manquer, échangeons dès maintenant.</p>
+                    <form id="contact-form" aria-describedby="contact-note">
+                        <div class="form-row">
+                            <label>Prénom <input name="prenom" autocomplete="given-name" required></label>
+                            <label>Nom <input name="nom" autocomplete="family-name" required></label>
+                        </div>
+                        <label>E-mail <input type="email" name="email" autocomplete="email" required></label>
+                        <label>Entreprise <input name="entreprise" autocomplete="organization"></label>
+                        <label>Message <textarea name="message" rows="5" required></textarea></label>
+                        <div class="form-actions">
+                            <p id="contact-note">Le formulaire ouvre votre application de messagerie.</p>
+                            <button class="button outline" type="submit">Envoyer →</button>
+                        </div>
+                    </form>
+                </div>
+                <p class="script contact-signature">Écrivons ensemble la prochaine histoire</p>
+            </div>
+        </section>
+    </main>
+    <footer class="burgundy">
+        <div class="wrap footer-content">
+            <a href="mailto:lauryne.blottas@gmail.com">lauryne.blottas@gmail.com</a>
+            <a href="https://www.instagram.com/lauryne.blts/">@lauryne.blts</a>
+            <a href="#accueil">Lauryne Blottas ↑</a>
         </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <p class="main-title">
-                <span class="main-title1">Marketing</span>
-                <span class="main-title2">& Communication</span>
-                <span class="main-title3">Parfum Beauté Luxe</span>
-            </p>
-            <h1 class="main-title-header">Portfolio</h1>
-            <p class="main-title-manifest">
-                <span class="main-title-manifest-tagline">Concevoir le produit. Donner vie à son univers.</span>
-                <span class="main-title-manifest-hero">Transformer chaque concept produit en univers cohérent, mémorable et désirable.</span>
-            </p>
-        </div>
-    </div>
-    <div class="horizontal-section-full" style="background-color: black;">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-left" style="color: var(--secondary-color)">
-                Quelques notes repères
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-right" style="color: var(--accent-color)">
-                Mon histoire, de Grasse à Chanel
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-left" style="color: var(--accent-color)">
-                Mon sillage professionnel
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full" style="background-color: var(--accent-color);">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-right" style="color: var(--secondary-color)">
-                Mon contentré d'expérience
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-left" style="color: var(--accent-color)">
-                Mon accord signature
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-right" style="color: var(--accent-color)">
-                Mon laboratoire
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full" style="background-color: black;">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-left" style="color: var(--light-color)">
-                Mes matières premières académiques
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-right" style="color: var(--accent-color)">
-                La formule qui matche
-            </h2>
-        </div>
-    </div>
-    <div class="horizontal-section-full">
-        <div class="horizontal-section-content">
-            <h2 class="horizontal-section-title-left" style="color: var(--accent-color)">
-                Contact
-            </h2>
-        </div>
-    </div>
+    </footer>
 </body>
+</html>

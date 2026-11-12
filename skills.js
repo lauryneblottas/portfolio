@@ -18,11 +18,17 @@ document.querySelectorAll(".signature .card-faces").forEach((faces) => {
 
 const labCategories = document.querySelectorAll(".lab-categories a");
 const labTitle = document.querySelector(".lab-details h3");
+const labDiscover = document.querySelector("#lab-discover");
+const labProject = document.querySelector("#lab-project");
+const labProjectTitle = document.querySelector("#lab-project-title");
 
 labCategories.forEach((category) => {
     category.addEventListener("click", () => {
         labCategories.forEach((item) => item.removeAttribute("aria-current"));
         category.setAttribute("aria-current", "page");
         if (labTitle) labTitle.textContent = category.textContent.trim();
+        labProjectTitle.textContent = category.textContent.trim();
     });
 });
+
+labDiscover.addEventListener("click", () => labProject.showModal());

@@ -5,11 +5,13 @@ form.addEventListener('submit', (event) => {
 
     const fields = new FormData(form);
     const name = [fields.get('prenom'), fields.get('nom')].join(' ');
+    const position = fields.get('poste');
     const company = fields.get('entreprise');
     const body = [
         fields.get('message'),
         '',
         name,
+        position,
         company,
         fields.get('email'),
     ].join('\r\n');

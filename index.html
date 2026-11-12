@@ -54,7 +54,7 @@
             </div>
         </section>
 
-        <section class="band dark">
+        <section class="band dark facts-band">
             <div class="wrap">
                 <h2>Quelques repères</h2>
                 <dl class="facts">
@@ -297,16 +297,16 @@
                 <p class="lab-label">Mes réalisations</p>
                 <div class="lab-panel">
                     <ul class="lab-categories" aria-label="Catégories de réalisations">
-                        <li>Consulting</li>
-                        <li>Mémoire académique</li>
-                        <li>Nez</li>
-                        <li>Maison</li>
-                        <li>Livre</li>
-                        <li>Film</li>
-                        <li>Conférence</li>
-                        <li>Exposition</li>
+                        <li><a href="#lab-feature" aria-current="page">Consulting</a></li>
+                        <li><a href="#lab-feature">Mémoire académique</a></li>
+                        <li><a href="#lab-feature">Nez</a></li>
+                        <li><a href="#lab-feature">Maison</a></li>
+                        <li><a href="#lab-feature">Livre</a></li>
+                        <li><a href="#lab-feature">Film</a></li>
+                        <li><a href="#lab-feature">Conférence</a></li>
+                        <li><a href="#lab-feature">Exposition</a></li>
                     </ul>
-                    <div class="lab-feature">
+                    <div class="lab-feature" id="lab-feature">
                         <div class="lab-cover">Photo de<br>couverture</div>
                         <div class="lab-details">
                             <h3>Titre</h3>
@@ -327,12 +327,110 @@
         <section class="band dark" id="formations">
             <div class="wrap">
                 <h2>Mes matières premières académiques</h2>
+                <p class="formations-label">Mes formations</p>
                 <p class="script study-title">4 ans d’expérience à l’étranger</p>
-                <p class="countries">France <span></span> Canada <span></span> Qatar <span></span> Chine</p>
-                <div class="cards three">
-                    <article><h3>Diplômes</h3><ul><li>Master of Sciences EU-ASIA Luxury Marketing — ESSCA × EFAP</li><li>MBA Luxury Communication &amp; Strategy — EFAP</li><li>Master in Management, spécialisation Marketing — ESSCA</li><li>Baccalauréat scientifique, spécialisation informatique</li></ul></article>
-                    <article><h3>Certifications</h3><ul><li>MOOC Creative Box</li><li>Inside LVMH</li><li>Summer Program Luxury Fashion Branding &amp; Consumer Experience</li><li>L’Oréal Brandstorm 2026</li></ul></article>
-                    <article><h3>Associations</h3><ul><li>ESSCA Éloquence</li><li>YPB &amp; Club Luxe ESSCA</li><li>BNEM</li><li>ESSCA Luxury Society</li></ul></article>
+                <div class="academic-map">
+                    <img src="assets/carte-parcours-international.png" alt="Paris, Sherbrooke, Doha et Shanghai : mon parcours international">
+                    <details class="map-marker map-marker-canada" name="academic-destination">
+                        <summary aria-label="Canada"></summary>
+                        <div class="map-marker-info">Échange universitaire à l’Université de Sherbrooke<br>Août – Décembre 2022</div>
+                    </details>
+                    <details class="map-marker map-marker-qatar" name="academic-destination">
+                        <summary aria-label="Qatar"></summary>
+                        <div class="map-marker-info">Expatriation au Qatar<br>2013 – 2016</div>
+                    </details>
+                    <details class="map-marker map-marker-china" name="academic-destination">
+                        <summary aria-label="Chine"></summary>
+                        <div class="map-marker-info">Semestre universitaire à la Shanghai International Studies University<br>Janvier – Mai 2025</div>
+                    </details>
+                </div>
+                <div class="academic-cards">
+                    <article class="academic-card academic-diplomas">
+                        <div class="academic-icon">
+                            <svg viewBox="0 -6 144 77" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M114 27l11-3.5q2.5-.8 0-1.7L77 6q-6-2.4-12 0L17 21.5q-2.5 1.2 0 2.4l48 16q6 2.2 12 0l28-9.5"/>
+                                <path d="M45.5 33.5V55q25.5 10 51 0V42.5M71 19.5l34.5 10.8v29.8"/>
+                            </svg>
+                        </div>
+                        <h3>Diplômes</h3>
+                        <dl class="academic-degrees">
+                            <div><dt>Master of Science<br>EU-ASIA Luxury Marketing</dt><dd>ESSCA X EFAP</dd></div>
+                            <div><dt>Master in Business Administration<br>Luxury Communication &amp; Strategies</dt><dd>EFAP</dd></div>
+                            <div><dt>Master in Management<br>Spécialisation Marketing</dt><dd>ESSCA</dd></div>
+                            <div><dt>Baccalauréat Scientifique<br>Spécialisation Informatique</dt><dd></dd></div>
+                        </dl>
+                    </article>
+                    <article class="academic-card">
+                        <div class="academic-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M35 44H11a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3h42a3 3 0 0 1 3 3v28a3 3 0 0 1-3 3h-5"/>
+                                <path d="M31 40H16a4 4 0 0 0-4-4V18a4 4 0 0 0 4-4h32a4 4 0 0 0 4 4v11M26 19h12M18 24h28M18 29h14M18 34h11"/>
+                                <path d="m37 43-3 11 4-1.5 2.6 3.5 2.1-6.6 2.1 6.6 2.6-3.5 4 1.5-3-11" fill="currentColor" fill-opacity=".25"/>
+                                <path d="M40 29q2.7-3 5.4 0 4.1-1 4.9 3 3.9 1.1 2.7 5 2.5 3-0.4 5.6 1 3.9-3 4.8-1.1 3.9-5 2.5-2 2.3-4.4 0-3.9 1.4-5-2.5-4-.9-3-4.8-2.9-2.6-.4-5.6-1.2-3.9 2.7-5 .8-4 5-3Z" fill="var(--light-color)"/>
+                                <circle cx="42.7" cy="39.5" r="4.3" fill="currentColor" fill-opacity=".25"/>
+                            </svg>
+                        </div>
+                        <h3>Certifications</h3>
+                        <ul class="academic-items"><li>Inside LVMH</li><li>L’Oréal Brandstorm 2026</li><li>Make Up For Ever Academy<br>Beauté &amp; Glam</li><li>ESSCA MOOC Creative Box</li></ul>
+                    </article>
+                    <article class="academic-card academic-association-card">
+                        <div class="academic-icon">
+                            <svg viewBox="0 0 101 106" fill="currentColor" aria-hidden="true">
+                                <circle cx="26.2" cy="20.9" r="9.8"/>
+                                <circle cx="50.5" cy="20.9" r="9.8"/>
+                                <circle cx="74.7" cy="20.9" r="9.8"/>
+                                <path d="M28.6 34H16.7a5.8 5.8 0 0 0-5.8 5.8v20.6a5.8 5.8 0 0 0 5.8 5.8v24.5a4.3 4.3 0 0 0 4.3 4.3h14.3a9 9 0 0 1-.8-4V70a8.8 8.8 0 0 1-5.9-8.3Z"/>
+                                <path d="M38.5 34h24a6 6 0 0 1 6 6v20a6.2 6.2 0 0 1-6 6.2v24.5a4.3 4.3 0 0 1-4.3 4.3H43a4.3 4.3 0 0 1-4.3-4.3V66.2a6.2 6.2 0 0 1-6.2-6.2V40a6 6 0 0 1 6-6Z"/>
+                                <path d="M72.4 34h11.9a5.8 5.8 0 0 1 5.8 5.8v20.6a5.8 5.8 0 0 1-5.8 5.8v24.5a4.3 4.3 0 0 1-4.3 4.3H65.7a9 9 0 0 0 .8-4V70a8.8 8.8 0 0 0 5.9-8.3Z"/>
+                            </svg>
+                        </div>
+                        <h3>Associations</h3>
+                        <div class="academic-associations">
+                            <details>
+                                <summary>YPB &amp; Club Luxe ESSCA</summary>
+                                <div class="academic-association-content">
+                                    <p><strong>Communauté de jeunes professionnels de la beauté et du luxe</strong></p>
+                                    <p class="academic-association-role">Membre active depuis avril 2026</p>
+                                    <p>Veille tendances · Événements beauté et luxe · Réseau</p>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>ESSCA Luxury Society</summary>
+                                <div class="academic-association-content">
+                                    <p><strong>Association de luxe de l’ESSCA School of Management</strong></p>
+                                    <p class="academic-association-role">Présidente et membre entre 2021 et 2024</p>
+                                    <a class="button academic-download" href="assets/portfolio-essca-luxury-society.pdf" download="Portfolio ESSCA Luxury Society - Lauryne BLOTTAS.pdf">
+                                        Mes réalisations à l’ESSCA Luxury Society
+                                        <svg aria-hidden="true" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2v17m-5-5 5 5 5-5M2 19v3a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4v-3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>BNEM</summary>
+                                <div class="academic-association-content">
+                                    <p><strong>Réseau étudiant national des grandes écoles de management</strong></p>
+                                    <p class="academic-association-role">Responsable du Comité Égalité des Genres et membre entre 2021 et 2022</p>
+                                    <p>Engagement et sensibilisation contre les violences sexistes et sexuelles en écoles de management.</p>
+                                    <p>Projet de création d’ateliers et de déploiement d’une charte contre les violences sexistes et sexuelles.</p>
+                                    <a class="button" href="https://www.instagram.com/le_bnem/reel/CkJcn2MgZVV/">Voir la vidéo de recrutement</a>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>ESSCA Éloquence</summary>
+                                <div class="academic-association-content">
+                                    <p><strong>Association d’art oratoire de l’ESSCA School of Management</strong></p>
+                                    <p class="academic-association-role">Responsable Communication et membre entre 2020 et 2021</p>
+                                    <p>Participation au concours Démosthène</p>
+                                    <button class="button" type="button" disabled>Voir la vidéo</button>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+                    <figure class="academic-graduation">
+                        <img src="assets/ceremonie-diplomes-essca.jpg" alt="Les diplômés de l’ESSCA lancent leurs chapeaux lors de la cérémonie du 14 mars 2026" width="1200" height="800" loading="lazy">
+                    </figure>
                 </div>
             </div>
         </section>
